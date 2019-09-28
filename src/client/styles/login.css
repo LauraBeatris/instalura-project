@@ -1,21 +1,40 @@
 :global .login-box {
-    position : absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: white;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 1em;
+}
+
+:global .login-box label {
+  align-self: flex-start;
 }
 
 :global .login-box input {
-    display: block;
-    border-radius: 5px;
-    margin: 1em auto;
-    border: 1px solid #dbdbdb;
+  display: block;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+  border: 1px solid #dbdbdb;
 }
 
-:global .login-box input[type='submit'] {
-    background: #3897f0;
-    border-color: #3897f0;
-    color: white;    
+:global .login-box input[type="submit"] {
+  background: #3897f0;
+  border-color: #3897f0;
+  color: white;
+}
+
+:global .login-box .create-account-msg {
+  font-weight: 600;
+}
+
+:global .login-box .create-account-msg span {
+  text-decoration: underline;
 }

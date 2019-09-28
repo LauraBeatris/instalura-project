@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { browserHistory } from "react-router";
+import { browserHistory, Link } from "react-router";
 
 export default class Login extends Component {
   constructor(props) {
@@ -44,10 +44,33 @@ export default class Login extends Component {
       <div className="login-box">
         <h1 className="header-logo">Instalura</h1>
         <span>{this.state.msg}</span>
-        <form onSubmit={this.envia.bind(this)}>
-          <input type="text" ref={input => (this.login = input)} />
-          <input type="password" ref={input => (this.senha = input)} />
-          <input type="submit" value="login" />
+        <form className="signup-form" onSubmit={this.envia.bind(this)}>
+          <label htmlFor="login" className="signup-label" htmlFor="url">
+            Login
+          </label>
+          <input
+            id="login"
+            type="text"
+            placeholder="Digite seu login"
+            ref={input => (this.login = input)}
+          />
+          <label htmlFor="senha" className="signup-label" htmlFor="url">
+            Senha
+          </label>
+          <input
+            id="senha"
+            type="password"
+            placeholder="Digite sua senha"
+            ref={input => (this.senha = input)}
+          />
+          <button className="button-submit" type="submit">
+            {" "}
+            Login{" "}
+          </button>
+          <p className="create-account-msg">
+            {" "}
+            Não tem uma conta? <Link to="/signup">Inscreva-se</Link>
+          </p>
         </form>
       </div>
     );
