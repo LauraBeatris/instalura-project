@@ -12,6 +12,7 @@ import thunkMiddleware from 'redux-thunk';
 /*  */
 import "./styles/reset.css";
 import "./styles/login.css";
+import "./styles/signup.css";
 import "./styles/timeline.css";
 import rootReducer from "./reducers";
 

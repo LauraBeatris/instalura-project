@@ -1,0 +1,84 @@
+:global section.signup-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  :global section.signup-section {
+    justify-content: center;
+  }
+}
+
+:global .signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:global .login-container,
+:global .senha-container,
+:global .confirmacao-container,
+:global .url-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+:global .signup-label {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+:global .signup-form {
+  background-color: rgb(231, 222, 222);
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+:global .signup-form input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 0.25rem;
+}
+
+:global .signup-form input::placeholder {
+  color: rgb(94, 88, 88);
+}
+
+:global .button-submit {
+  background-color: #3897f0;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: 05s all ease-in-out;
+  cursor: pointer;
+}
+
+:global .button-submit:hover {
+  transform: translateY(5px);
+}
+
+:global .errors-list {
+  text-align: center;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+:global .errors-list li {
+  color: red;
+  font-weight: 500;
+  margin: 0;
+}
