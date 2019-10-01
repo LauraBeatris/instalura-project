@@ -11,6 +11,16 @@ export default class SignupApi {
       })
     };
 
-    return fetch("http://localhost:8080/usuarios", requestInfo);
+    return new Promise((resolve, reject) => {
+      fetch("http://localhost:8080/usuarios", requestInfo)
+        .then(res => {
+          if (res.ok) {
+            resolve();
+          } else {
+            throw new Error("Não foi possivel fazer o cadastro");
+          }
+        })
+        .catch(err => reject(err));
+    });
   }
 }

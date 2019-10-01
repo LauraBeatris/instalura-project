@@ -6,72 +6,70 @@ class Signup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      login: '',
-      senha: '',
-      confirma_senha: '',
-      urlPerfil: '',
-      error_senha: "",
-      error_login: "",
-      error_api: "",
+      login: null,
+      senha: null,
+      confirmaSenha: null,
+      urlPerfil: null,
+      errorSenha: null,
+      errorLogin: null,
+      errorApi: null,
+      showErrors: false,
     };
+    this.handleSubmit = this.handleSubmit.bind(this)
     this.handleValidation = this.handleValidation.bind(this)
   }
+   
+ handleValidation(){
+    let errors = []; 
+      // Verificando se a senha é a mesma que a de confirmação
+      if (this.state.senha !== this.state.confirmaSenha){
+        errors = [...errors, 'Senha não confere']
+        this.setState({ errorSenha: "Senha não confere" });
+      } else {
+        this.setState({ errorSenha: "" });
+      } 
 
-  // Lidando com as validações 
-  handleValidation() {
-    // Verificando se a senha é a mesma que a de confirmação
-    if (this.state.senha !== this.state.confirma_senha) {
-      this.setState({ error_senha: "Senha não confere" });
-    } else {
-      this.setState({ error_senha: "" });
-    }
-    
-    // Verificando se o login é igual a senha
-    if (this.state.login === this.state.senha) {
-      this.setState({ error_login: "Senha igual ao username" });
-    } else {
-      this.setState({ error_login: "" });
-    }
+      // Verificando se o login é igual a senha
+      if (this.state.login === this.state.senha) {
+        errors = [...errors, 'Senha igual ao username']
+        this.setState({ errorLogin: "Senha igual ao username" });
+      } else {
+        this.setState({ errorLogin: "" });
+      }
+
+      return errors
   }
- 
-  handleSubmit(ev){
-    ev.preventDefault()
-    // Após lidar com a validação os dados serão mandados para a API
-    this.handleValidation()
 
-    // Verificando se possui erros para então fazer a requisição
-    if (!this.state.error_login && !this.state.error_senha) {
+  handleSubmit (){
+    const hasErrors = this.handleValidation().length > 0
+
+    //Verificando se não possui erros para então fazer a requisição
+    if (!hasErrors){
       SignupApi.postSignup(this.state.login, this.state.senha, this.state.urlPerfil)
-      .then(res => {
-        if (res.ok){
-          return res.text()
-        } else { 
-          throw new Error('Não foi possivel fazer o cadastro')
-        }
-      })
-      .then(res => {
-        this.setState({error_api: ''})
-        browserHistory.push("/")
+      .then(() => {
+        // Apagando o erro e redirecionando para a tela de login
+        this.setState({errorApi: ''})
+        browserHistory.push('/')
       })
       .catch(err => {
-        // Setando mensagem de erro no state 
-        this.setState({error_api: 'Não foi possivel realizar o cadastro'})
-        // Limpando os campos 
-       this.setState({login: '', senha: '', confirma_senha: '', urlPerfil: ''})
+        // Setando o erro e limpando os campos
+        this.setState({errorApi: 'Não foi possivel realizar o cadastro'})
+        this.setState({login: '', senha: '', confirmaSenha: '', urlPerfil: ''})
       })
-
     }
-  }
- 
+}
   
-
   render() {
-    const { error_senha, error_login, error_api } = this.state;
+    const { errorSenha, errorLogin, errorApi, showErrors } = this.state;
     return (
       <section className="signup-section">
         <h1 className="header-logo" >Instalura</h1>
-        <h2 classNane="signup-subtitle" style={{fontSize: '1.25rem'}, {textAlign: 'center'}}> Cria sua conta. É simples e fácil 👍 </h2>
-        <form onSubmit={(ev) => this.handleSubmit(ev)} 
+        <h2 className="signup-subtitle" style={{fontSize: '1.25rem'}, {textAlign: 'center'}}> Cria sua conta. É simples e fácil 👍 </h2>
+        <form onSubmit={(ev) => {
+          ev.preventDefault()
+          this.handleSubmit()
+          this.setState({showErrors: true})
+        }}
           className="signup-form">
           <div className="login-container">
             <label className="signup-label" htmlFor="login">
@@ -113,8 +111,8 @@ class Signup extends Component {
               type="password"
               required="true"
               placeholder="Digite sua senha novamente"
-              onChange={ev => this.setState({confirma_senha: ev.target.value})}
-              value={this.state.confirma_senha}
+              onChange={ev => this.setState({confirmaSenha: ev.target.value})}
+              value={this.state.confirmaSenha}
             />
           </div>
           <div className="url-container">
@@ -125,7 +123,7 @@ class Signup extends Component {
             <input
               id="url"
               type="text"
-              required
+              required="true"
               placeholder="Digite a url do seu perfil"
               pattern='^(ftp|http|https):\/\/(avatars3)[^ "]+$'
               title="Url inválida"
@@ -134,15 +132,14 @@ class Signup extends Component {
             />
           </div>
           <button type="submit" className="button-submit">
-            {" "}
-            Signup{" "}
+            Signup
           </button>
-          {(error_login ||
-            error_senha || error_api) && (
+          {(errorLogin ||
+            errorSenha || errorApi) && showErrors && (
               <ul className="errors-list">
-                {error_login && <li> {error_login} </li>}
-                {error_senha && <li> {error_senha} </li>}
-                {error_api && <li> {error_api} </li>}
+                {errorLogin && <li> {errorLogin} </li>}
+                {errorSenha && <li> {errorSenha} </li>}
+                {errorApi && <li> {errorApi} </li>}
               </ul>
             )}
             
