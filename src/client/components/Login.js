@@ -35,7 +35,7 @@ export default class Login extends Component {
         browserHistory.push("/timeline");
       })
       .catch(error => {
-        this.setState({ msg: error.message });
+        this.setState({ msg: 'Não foi possivel realizar o login. Tente novamente.' });
       });
   }
 
@@ -43,7 +43,7 @@ export default class Login extends Component {
     return (
       <div className="login-box">
         <h1 className="header-logo">Instalura</h1>
-        <span>{this.state.msg}</span>
+        <span style={{color: 'red'}}>{this.state.msg}</span>
         <form className="signup-form" onSubmit={this.envia.bind(this)}>
           <label htmlFor="login" className="signup-label" htmlFor="url">
             Login

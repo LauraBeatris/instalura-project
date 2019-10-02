@@ -9,7 +9,6 @@
   height: 100%;
 }
 
-
 :global .container {
   padding: 0 10%;
 }
@@ -34,17 +33,17 @@
   background: url(../images/logo-instalura.svg) no-repeat left;
   height: 1em;
   padding-left: 1.5em;
-  padding-bottom: .2em;
+  padding-bottom: 0.2em;
   filter: hue-rotate(80deg);
-  transition: .4s;
+  transition: 0.4s;
 }
 
-:global .header-logo:hover{
+:global .header-logo:hover {
   filter: hue-rotate(0);
 }
 
 :global .header-busca-campo {
-  padding: .5em;
+  padding: 0.5em;
   margin-left: 1em;
   background: #fafafa;
   border: 1px solid #dbdbdb;
@@ -66,7 +65,7 @@
   color: #fff;
   min-width: 32px;
   height: 2.4em;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 :global .header-busca-submit:hover {
@@ -74,21 +73,20 @@
 }
 
 :global .header-nav {
-  list-style: none
+  list-style: none;
 }
 
 :global .header-nav-item a {
   text-decoration: none;
   color: #069;
   font-size: 3em;
-}    
+}
 
-:global .header-nav-item a:hover{
+:global .header-nav-item a:hover {
   color: #5ad4c9;
 }
 
 /*******/
-
 
 :global .foto {
   background-color: #fff;
@@ -96,7 +94,6 @@
   border-radius: 3px;
   max-width: 550px;
   margin: 2em auto;
-  
 }
 
 :global .foto-header {
@@ -105,7 +102,6 @@
   justify-content: space-between;
   padding: 0 2%;
 }
-
 
 :global .foto-usuario {
   display: flex;
@@ -120,11 +116,11 @@
   color: #069;
 }
 
-:global .foto-usuario img{
+:global .foto-usuario img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: .7em;
+  margin-right: 0.7em;
 }
 
 :global .foto-data {
@@ -136,7 +132,6 @@
 }
 
 /*****/
-
 
 :global .foto-info {
   padding: 1em;
@@ -160,19 +155,23 @@
   font-weight: bold;
 }
 
-
 :global .foto-info-comentarios {
   list-style: none;
-  padding: 0;
+  padding: 0 1rem;
   line-height: 1.2;
   border-bottom: 1px solid #efefef;
   padding-bottom: 1em;
 }
 
-:global .comentario {
-  margin-bottom: .6em;
+:global .foto-info-legenda {
+  border-top: 1px solid #00000021;
+  border-bottom: 1px solid #0000001a;
+  padding: 1rem 1rem;
 }
 
+:global .comentario {
+  margin-bottom: 0.6em;
+}
 
 /*****/
 
@@ -188,7 +187,7 @@
   height: 44px;
   text-indent: -9999px;
   display: inline-block;
-  transition: .4s;
+  transition: 0.4s;
   margin-right: 1em;
 }
 
@@ -199,7 +198,7 @@
   height: 44px;
   text-indent: -9999px;
   display: inline-block;
-  transition: .4s;
+  transition: 0.4s;
   margin-right: 1em;
 }
 
@@ -238,4 +237,23 @@
 :global .timeline-leave.timeline-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
-}      
+}
+
+:global .info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+:global .foto-excluir {
+  color: #069;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+:global .foto-excluir:hover {
+  text-decoration: underline;
+}
