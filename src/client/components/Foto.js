@@ -48,6 +48,7 @@ class FotoAtualizacoes extends Component {
 
 class FotoInfo extends Component {
   render() {
+    const { apaga } = this.props;
     return (
       <div className="foto-in fo">
         <div className="info-container">
@@ -62,7 +63,10 @@ class FotoInfo extends Component {
             curtiram
           </div>
 
-          <p className="foto-excluir"> Deletar Foto </p>
+          <p className="foto-excluir" onClick={ev => apaga(this.props.foto.id)}>
+            {" "}
+            Deletar Foto{" "}
+          </p>
         </div>
 
         <p className="foto-info-legenda">
@@ -114,7 +118,7 @@ export default class FotoItem extends Component {
       <div className="foto">
         <FotoHeader foto={this.props.foto} />
         <img alt="foto" className="foto-src" src={this.props.foto.urlFoto} />
-        <FotoInfo foto={this.props.foto} />
+        <FotoInfo foto={this.props.foto} apaga={this.props.apaga} />
         <FotoAtualizacoes {...this.props} />
       </div>
     );

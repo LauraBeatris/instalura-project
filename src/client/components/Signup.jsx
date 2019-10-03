@@ -125,7 +125,7 @@ class Signup extends Component {
               type="text"
               required="true"
               placeholder="Digite a url do seu perfil"
-              pattern='^(ftp|http|https):\/\/(avatars3)[^ "]+$'
+              pattern='^(ftp|http|https):\/\/[^ "]+$'
               title="Url inválida"
               onChange={ev => this.setState({urlPerfil: ev.target.value})}
               value={this.state.urlPerfil}

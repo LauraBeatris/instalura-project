@@ -1,4 +1,10 @@
-import { listagem, comentario, like, notifica } from "../actions/actionCreator";
+import {
+  listagem,
+  comentario,
+  like,
+  notifica,
+  apaga
+} from "../actions/actionCreator";
 import "isomorphic-fetch";
 
 export default class TimelineApi {
@@ -10,6 +16,27 @@ export default class TimelineApi {
           dispatch(listagem(fotos));
           return fotos;
         });
+    };
+  }
+
+  static apaga(fotoId) {
+    return dispatch => {
+      const requestInfo = {
+        method: "DELETE",
+        headers: new Headers({
+          "Content-type": "application/json"
+        }),
+        headers: {
+          "X-AUTH-TOKEN": localStorage.getItem("auth-token")
+        }
+      };
+
+      fetch(`http://localhost:8080/api/fotos/${fotoId}`, requestInfo)
+        .then(() => {
+          dispatch(apaga(fotoId));
+          dispatch(notifica("Foto deletada com sucesso"));
+        })
+        .catch(err => dispatch(notifica("Não foi possível deletar a foto")));
     };
   }
 
