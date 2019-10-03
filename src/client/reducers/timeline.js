@@ -12,10 +12,7 @@ function trocaFoto(lista, fotoId, callbackAtualizaPropriedades) {
 
 export function timeline(state = new List(), action) {
   if (action.type === "APAGA") {
-    console.log("apaga");
     const listaFiltrada = state.filter(foto => foto.id !== action.fotoId);
-    console.log(state);
-    console.log(listaFiltrada);
     return new List(listaFiltrada);
   }
 

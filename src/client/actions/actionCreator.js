@@ -11,11 +11,9 @@ export function like(fotoId, liker) {
 }
 
 export function notifica(msg) {
-  console.log("notifica action");
   return { type: "ALERT", msg };
 }
 
 export function apaga(fotoId) {
-  console.log("apaga action");
   return { type: "APAGA", fotoId };
 }
