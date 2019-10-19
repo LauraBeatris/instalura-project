@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    margin-left: 0.25rem;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__image {
+    height: 2rem;
+  }
+}

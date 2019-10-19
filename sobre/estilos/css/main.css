@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logo__title {
+    color: #fefefe;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    margin-left: 0.25rem; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .logo__title {
+        margin-right: 0.5rem; } }
+  .logo__image {
+    height: 2rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #393939;
+  padding: 0.5rem 5rem; }
+  .header__search-input {
+    height: 1rem;
+    width: 11rem; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .header {
+      padding: 0.5rem 0.5rem; } }
+
+html {
+  font-size: 16px; }
+  @media screen and (min-width: 900px) {
+    html {
+      font-size: 18px; } }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 20px; } }
+
+body {
+  font-family: "Open Sans", sans-serif; }
