@@ -5,7 +5,7 @@
   .logo__title {
     color: #fefefe;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-right: 1rem;
     margin-left: 0.25rem; }
     @media (min-width: 320px) and (max-width: 480px) {
@@ -20,6 +20,9 @@
   align-items: center;
   background-color: #393939;
   padding: 0.5rem 5rem; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .header {
+      padding: 0.5rem 0.5rem; } }
   .header__search-input {
     height: 1rem;
     width: 11rem; }
@@ -27,14 +30,62 @@
     .header {
       padding: 0.5rem 0.5rem; } }
 
+.section {
+  /* ==== Team Section ==== */ }
+  .section__text {
+    color: #6381e4;
+    font-size: 1rem; }
+  .section--team {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #010a2b; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .section--team {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; } }
+    .section--team__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%; }
+    .section--team__title a,
+    .section--team__links li a {
+      color: #fefefe;
+      margin-left: 2px; }
+    .section--team__title .fa-users,
+    .section--team__title .fa-project-diagram,
+    .section--team__links li .fa-users,
+    .section--team__links li .fa-project-diagram {
+      color: #6381e4; }
+    .section--team__text, .section--team__links {
+      margin-left: 2rem; }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .section--team__text, .section--team__links {
+          margin-left: 0rem; } }
+    .section--team__title {
+      color: #fefefe;
+      font-size: 1.5rem;
+      align-self: center;
+      margin-bottom: 1.4rem; }
+    .section--team__text {
+      margin-bottom: 0.9rem; }
+    .section--team__links {
+      margin-top: 0.9rem; }
+      .section--team__links li {
+        margin-top: 0.9rem; }
+    .section--team__image {
+      height: 10rem;
+      margin-bottom: 3rem;
+      border-radius: 3px; }
+
 html {
   font-size: 16px; }
-  @media screen and (min-width: 900px) {
-    html {
-      font-size: 18px; } }
-  @media screen and (min-width: 1200px) {
-    html {
-      font-size: 20px; } }
 
 body {
   font-family: "Open Sans", sans-serif; }

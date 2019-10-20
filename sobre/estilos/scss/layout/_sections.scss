@@ -1,0 +1,78 @@
+.section {
+  &__text {
+    color: $blue-lighten;
+    font-size: $font-sm;
+  }
+
+  /* ==== Team Section ==== */
+  &--team {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: $ocean-blue;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+    }
+
+    &__title,
+    &__links li {
+      a {
+        color: $white;
+        margin-left: 2px;
+      }
+
+      .fa-users,
+      .fa-project-diagram {
+        color: $blue-lighten;
+      }
+    }
+
+    &__text,
+    &__links {
+      margin-left: 2rem;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-left: 0rem;
+      }
+    }
+
+    &__title {
+      color: $white;
+      font-size: $font-xl;
+      align-self: center;
+      margin-bottom: $margin-sm;
+    }
+
+    &__text {
+      margin-bottom: $margin-xs;
+    }
+
+    &__links {
+      margin-top: $margin-xs;
+
+      li {
+        margin-top: $margin-xs;
+      }
+    }
+
+    &__image {
+      height: 10rem;
+      margin-bottom: 3rem;
+      border-radius: 3px;
+    }
+  }
+}
