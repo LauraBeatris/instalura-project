@@ -1,3 +1,12 @@
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .mobile {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .not-mobile {
+    display: none;
+    border-radius: 10px; } }
+
 .logo {
   display: flex;
   justify-content: center;
@@ -31,10 +40,42 @@
       padding: 0.5rem 0.5rem; } }
 
 .section {
+  /* ==== About Section === */
   /* ==== Team Section ==== */ }
   .section__text {
     color: #6381e4;
     font-size: 1rem; }
+  .section--about {
+    color: #fefefe;
+    background-image: url("../../../imagens/banner.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.5rem 12rem; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .section--about {
+        padding: 2.5rem 0.5rem; } }
+    .section--about__title {
+      font-size: 1.5rem;
+      margin-bottom: 2.2rem; }
+    .section--about__content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .section--about__content-container {
+          align-items: center; } }
+    .section--about__description {
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+      line-height: 1.4rem; }
+    .section--about__more-button {
+      border: 1px solid #fefefe;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      width: 13.6rem;
+      text-align: center; }
   .section--team {
     display: flex;
     justify-content: space-around;

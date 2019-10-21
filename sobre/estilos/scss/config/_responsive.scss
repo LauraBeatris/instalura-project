@@ -1,0 +1,12 @@
+.mobile {
+  @media (min-width: 1000px) and (max-width: 1500px) {
+    display: none;
+  }
+}
+
+.not-mobile {
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+    border-radius: 10px;
+  }
+}

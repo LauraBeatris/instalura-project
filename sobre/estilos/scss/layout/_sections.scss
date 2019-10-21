@@ -4,6 +4,50 @@
     font-size: $font-sm;
   }
 
+  /* ==== About Section === */
+  &--about {
+    color: $white;
+    background-image: url("../../../imagens/banner.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.5rem 12rem;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 2.5rem 0.5rem;
+    }
+
+    &__title {
+      font-size: $font-xl;
+      margin-bottom: $margin-xl;
+    }
+
+    &__content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        align-items: center;
+      }
+    }
+
+    &__description {
+      font-size: $font-sm;
+      margin-bottom: $margin-sm;
+      line-height: 1.4rem;
+    }
+
+    &__more-button {
+      border: 1px solid $white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      width: 13.6rem;
+      text-align: center;
+    }
+  }
+
   /* ==== Team Section ==== */
   &--team {
     display: flex;
