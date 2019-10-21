@@ -23,6 +23,19 @@
   .logo__image {
     height: 2rem; }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6381e4;
+  border-radius: 3px; }
+  .news__image {
+    height: 10rem; }
+  .news__title {
+    color: #fefefe;
+    font-size: 1.5rem; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -41,7 +54,8 @@
 
 .section {
   /* ==== About Section === */
-  /* ==== Team Section ==== */ }
+  /* ==== Team Section ==== */
+  /* ==== News Section ==== */ }
   .section__text {
     color: #6381e4;
     font-size: 1rem; }
@@ -119,11 +133,18 @@
     .section--team__links {
       margin-top: 0.9rem; }
       .section--team__links li {
-        margin-top: 0.9rem; }
+        margin-top: 1.4rem; }
     .section--team__image {
-      height: 10rem;
+      height: 12rem;
       margin-bottom: 3rem;
       border-radius: 3px; }
+  .section--news {
+    background-color: #010a2b;
+    padding: 1.4rem 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
 
 html {
   font-size: 16px; }

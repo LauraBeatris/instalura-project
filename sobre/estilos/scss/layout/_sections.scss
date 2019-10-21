@@ -109,14 +109,24 @@
       margin-top: $margin-xs;
 
       li {
-        margin-top: $margin-xs;
+        margin-top: $margin-sm;
       }
     }
 
     &__image {
-      height: 10rem;
+      height: 12rem;
       margin-bottom: 3rem;
       border-radius: 3px;
     }
+  }
+
+  /* ==== News Section ==== */
+  &--news {
+    background-color: $ocean-blue;
+    padding: $padding-sm $padding-xs;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
