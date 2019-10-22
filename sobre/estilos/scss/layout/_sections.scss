@@ -45,6 +45,7 @@
       border-radius: 5px;
       width: 13.6rem;
       text-align: center;
+      cursor: pointer;
     }
   }
 
@@ -109,6 +110,7 @@
       margin-top: $margin-xs;
 
       li {
+        font-size: 1.1rem;
         margin-top: $margin-sm;
         cursor: pointer;
         transition: all 0.8s;

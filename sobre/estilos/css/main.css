@@ -59,7 +59,8 @@
     align-items: center;
     list-style: none; }
     .footer__social-medias li {
-      margin-left: 1.5rem; }
+      margin-left: 1.5rem;
+      cursor: pointer; }
 
 .header {
   display: flex;
@@ -114,7 +115,8 @@
       padding: 1rem 2rem;
       border-radius: 5px;
       width: 13.6rem;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
   .section--team {
     display: flex;
     justify-content: space-around;
@@ -158,6 +160,7 @@
     .section--team__links {
       margin-top: 0.9rem; }
       .section--team__links li {
+        font-size: 1.1rem;
         margin-top: 1.4rem;
         cursor: pointer;
         transition: all 0.8s; }
