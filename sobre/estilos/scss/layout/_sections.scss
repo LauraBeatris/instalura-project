@@ -113,10 +113,18 @@
       }
     }
 
-    &__image {
-      height: 12rem;
+    &__image-container {
+      height: 4rem;
+      width: 20rem;
+      background-image: url(../../../imagens/requite.jpeg);
+      background-size: 50rem;
+      background-position: bottom -135px right 80px;
       margin-bottom: 3rem;
       border-radius: 3px;
+    }
+
+    &__image {
+      height: 12rem;
     }
   }
 
@@ -124,9 +132,14 @@
   &--news {
     background-color: $ocean-blue;
     padding: $padding-sm $padding-xs;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.8rem;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
   }
 }

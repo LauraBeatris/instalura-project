@@ -26,15 +26,18 @@
 .news {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid #6381e4;
-  border-radius: 3px; }
+  border-radius: 3px;
+  padding: 2rem 1rem; }
   .news__image {
-    height: 10rem; }
+    height: 12rem;
+    width: 100%; }
   .news__title {
     color: #fefefe;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin: 1.4rem 0rem; }
 
 .header {
   display: flex;
@@ -134,17 +137,27 @@
       margin-top: 0.9rem; }
       .section--team__links li {
         margin-top: 1.4rem; }
-    .section--team__image {
-      height: 12rem;
+    .section--team__image-container {
+      height: 4rem;
+      width: 20rem;
+      background-image: url(../../../imagens/requite.jpeg);
+      background-size: 50rem;
+      background-position: bottom -135px right 80px;
       margin-bottom: 3rem;
       border-radius: 3px; }
+    .section--team__image {
+      height: 12rem; }
   .section--news {
     background-color: #010a2b;
     padding: 1.4rem 0.9rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.8rem; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .section--news {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1rem; } }
 
 html {
   font-size: 16px; }

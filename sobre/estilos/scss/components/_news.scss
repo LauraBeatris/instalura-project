@@ -1,17 +1,20 @@
 .news {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid $blue-lighten;
   border-radius: 3px;
+  padding: 2rem 1rem;
 
   &__image {
-    height: 10rem;
+    height: 12rem;
+    width: 100%;
   }
 
   &__title {
     color: $white;
     font-size: $font-xl;
+    margin: $margin-sm 0rem;
   }
 }
