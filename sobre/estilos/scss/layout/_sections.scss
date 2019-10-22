@@ -110,6 +110,11 @@
 
       li {
         margin-top: $margin-sm;
+        cursor: pointer;
+        transition: all 0.8s;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
