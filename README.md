@@ -28,10 +28,11 @@
 ## :rocket: About the project
 Instalura is social media application based on Instagram. The main application was made with Electrode, for the server side rendering of React, increasing the SEO. And, the landing page was made with SCSS and HTML.
 
+<hr />
+
 ## :ballot_box_with_check: Goals 
 According to the 3 requested features
 
-<hr />
 
 *First Feature*: Landing Page 
   - Fonts integrated with google fonts: Open Sans and Open Sans 700
