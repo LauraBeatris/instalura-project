@@ -36,8 +36,14 @@ According to the 3 requested features
   - Stylesheets with SCSS/CSS: SCSS Choosed.
   - Links "Conheça nossa equipe" and "Trabalhe com a gente": Applying a hover effect on those links, with a transition effect, scalling the items (1.1 Proporsition).
   - Hover effect on with item of news section: Showing a white border on each item.
-
-- Second Feature:
+*Second Feature*: Signup
+  - Route: /Signup
+  - Layout: Mobile First
+  - Cross Field Validation: Login can't be equal to password. Verification of password with his confirmation. 
+  - Error messages
+  - Fetch API to post the Signup data 
+  - If happened some error, the fields have to be cleaned and output a error message to the user as mentioned above. 
+  - After a successfully signup, the app have to redirect the user to the login page.
 
 - Third Feature:
 
