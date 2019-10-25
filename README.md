@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  <span color="#0366d6">Course Conclusion Project</span> of the Front End Engineer Path by Alura. Learning Goals: Apply the main concepts of ReactJS, also applying the Redux Architecture. Mastering HTML and CSS/SCSS concepts. 
+  <span color="#0366d6">Course Conclusion Project</span> of the Front End Engineer Path by Alura. Learning Goals: Apply the main concepts of ReactJS with the Redux Architecture. And also, mastering HTML and CSS/SCSS concepts. 
 </h3>
 
 <p align="center">
@@ -28,7 +28,7 @@
 <hr />
 
 ## :rocket: About the project
-Instalura is social media application based on Instagram. The main application was made with Electrode, for the server side rendering of React, increasing the SEO. And, the landing page was made with SCSS and HTML.
+Instalura is social media application based on Instagram. The main application was made with Electrode for the server side rendering of React increasing the SEO. And, the landing page was made with SCSS and HTML.
 
 <hr />
 
@@ -39,20 +39,20 @@ According to the 3 requested features
 *First Feature*: Landing Page 
   - Fonts integrated with google fonts: Open Sans and Open Sans 700
   - Stylesheets with SCSS/CSS: SCSS Choosed.
-  - Links "Conheça nossa equipe" and "Trabalhe com a gente": Applying a hover effect on those links, with a transition effect, scalling the items (1.1 Proporsition).
-  - Hover effect on with item of news section: Showing a white border on each item.
+  - Links "Conheça nossa equipe" and "Trabalhe com a gente": Applied a hover effect on those links, with a transition effect, scalling the items (1.1 Proporsition).
+  - Hover effect on items of the news section: Showing a white border on each of them.
   
 *Second Feature*: Signup
   - Route: /Signup.
   - Layout: Mobile First.
-  - Cross Field Validation: Login can't be equal to password. Verification of password with his confirmation. 
+  - Cross Field Validation: Login can't be equal to password and verification of password needs to be equal of the confirmation. 
   - Error messages.
-  - Fetch API to post the Signup data .
+  - Fetch API to post the Signup data.
   - If happened some error, the fields have to be cleaned and output a error message to the user as mentioned above. 
   - After a successfully signup, the app have to redirect the user to the login page.
 
 *Third Feature*: Removing posts
-  - The logic of this feature has to be in the Redux Architecture.
+  - The logic of this feature has to be in the Redux Architecture of the project.
   - The user needs to receive a notification for each post removed. 
   
   <hr />
