@@ -31,15 +31,15 @@ Instalura is social media application based on Instagram. The main application w
 ## :ballot_box_with_check: Goals 
 According to the 3 requested features
 
-*First Funcionality*: Landing Page 
+*First Feature*: Landing Page 
   - Fonts integrated with google fonts: Open Sans and Open Sans 700
   - Stylesheets with SCSS/CSS: SCSS Choosed.
   - Links "Conheça nossa equipe" and "Trabalhe com a gente": Applying a hover effect on those links, with a transition effect, scalling the items (1.1 Proporsition).
   - Hover effect on with item of news section: Showing a white border on each item.
 
-- Second Funcionality:
+- Second Feature:
 
-- Third Funcionality:
+- Third Feature:
 
 ## :memo: Licence
 
