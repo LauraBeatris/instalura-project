@@ -7,7 +7,7 @@
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://github.com/LauraBeatris/instalura-project?color=blue&logoColor=black">
+  <img alt="GitHub language count" src="https://img.shields.io/badge/languages-1-blue">
 
   <a href="https://www.linkedin.com/in/laurabeatris/">
     <img alt="Made by Laura Beatris" src="https://img.shields.io/badge/made%20by-laurabeatris-blue">
@@ -16,7 +16,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
   <a href="https://github.com/LauraBeatris/projects_store/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/LauraBeatris/instalura-project?style=flat-square">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/LauraBeatris/instalura-project?style=plastic">
   </a>
 
 ## :memo: Licence
