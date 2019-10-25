@@ -7,7 +7,7 @@
   /* ==== About Section === */
   &--about {
     color: $white;
-    background-image: url("../../../imagens/banner.jpeg");
+    background-image: url("../../imagens/banner.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,6 +27,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      margin-bottom: 1rem;
 
       @media (min-width: 320px) and (max-width: 480px) {
         align-items: center;
@@ -123,10 +124,10 @@
     &__image-container {
       height: 4rem;
       width: 20rem;
-      background-image: url(../../../imagens/requite.jpeg);
+      background-image: url("../../imagens/requite.jpeg");
       background-size: 50rem;
       background-position: bottom -135px right 80px;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       border-radius: 3px;
     }
 

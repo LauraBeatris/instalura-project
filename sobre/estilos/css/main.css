@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 2000px) {
   .mobile {
     display: none; } }
 
@@ -87,7 +87,7 @@
     font-size: 1rem; }
   .section--about {
     color: #fefefe;
-    background-image: url("../../../imagens/banner.jpeg");
+    background-image: url("../../imagens/banner.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,7 +102,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 1rem; }
       @media (min-width: 320px) and (max-width: 480px) {
         .section--about__content-container {
           align-items: center; } }
@@ -169,10 +170,10 @@
     .section--team__image-container {
       height: 4rem;
       width: 20rem;
-      background-image: url(../../../imagens/requite.jpeg);
+      background-image: url("../../imagens/requite.jpeg");
       background-size: 50rem;
       background-position: bottom -135px right 80px;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       border-radius: 3px; }
     .section--team__image {
       height: 12rem; }
