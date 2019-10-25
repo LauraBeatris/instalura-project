@@ -25,6 +25,8 @@
   <a href="#memo-licence">Licence</a>
 </p>
 
+<hr />
+
 ## :rocket: About the project
 Instalura is social media application based on Instagram. The main application was made with Electrode, for the server side rendering of React, increasing the SEO. And, the landing page was made with SCSS and HTML.
 
@@ -52,6 +54,8 @@ According to the 3 requested features
 *Third Feature*: Removing posts
   - The logic of this feature has to be in the Redux Architecture.
   - The user needs to receive a notification for each post removed. 
+  
+  <hr />
 
 ## :memo: Licence
 
