@@ -1,27 +1,28 @@
-# instalura-ssr [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+<h1 align="center">
+    <img alt="Alura" src="https://cursos.alura.com.br/images/gnarus/logo-alura.svg" width="200px" />
+</h1>
 
-## Installation
+<h3 align="center">
+  Course Conclusion Project of the Front End Engineer Path by Alura. Learning Goals: Apply the main concepts of ReactJS, also applying the Redux Archicture. Mastering HTML and CSS/SCSS concepts. 
+</h3>
 
-```sh
-$ npm install --save instalura-ssr
-```
+<p align="center">
+  <img alt="GitHub language count" src="https://github.com/LauraBeatris/instalura-project?color=blue&logoColor=black">
 
-## Usage
+  <a href="https://www.linkedin.com/in/laurabeatris/">
+    <img alt="Made by Laura Beatris" src="https://img.shields.io/badge/made%20by-laurabeatris-blue">
+  </a>
 
-```js
-var instaluraSsr = require('instalura-ssr');
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-instaluraSsr('Rainbow');
-```
-## License
+  <a href="https://github.com/LauraBeatris/projects_store/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/LauraBeatris/instalura-project?style=flat-square">
+  </a>
 
-Apache-2.0 © []()
+## :memo: Licence
 
+MIT Licence. See the file [LICENSE](LICENSE.md) for more details.
 
-[npm-image]: https://badge.fury.io/js/instalura-ssr.svg
-[npm-url]: https://npmjs.org/package/instalura-ssr
-[travis-image]: https://travis-ci.org//instalura-ssr.svg?branch=master
-[travis-url]: https://travis-ci.org//instalura-ssr
-[daviddm-image]: https://david-dm.org//instalura-ssr.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//instalura-ssr
+---
+
+Made with ♥ by Laura :wave: [See my linkedin!](https://www.linkedin.com/in/laurabeatris/)
