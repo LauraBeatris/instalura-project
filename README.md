@@ -1,5 +1,7 @@
 <h1 align="center">
+  <a href="https://www.alura.com.br/?gclid=CjwKCAjwusrtBRBmEiwAGBPgE0hjFUBJ2dfBhW47akfva7gXMIv4Sh9AhWdn02Td_7w6lq1L9Gh4AhoCU7oQAvD_BwE">
     <img alt="Alura" src="https://cursos.alura.com.br/images/gnarus/logo-alura.svg" width="200px" />
+  <a/>
 </h1>
 
 <h3 align="center">
