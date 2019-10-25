@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Course Conclusion Project of the Front End Engineer Path by Alura. Learning Goals: Apply the main concepts of ReactJS, also applying the Redux Archicture. Mastering HTML and CSS/SCSS concepts. 
+  <span color="#0366d6">Course Conclusion Project<span> of the Front End Engineer Path by Alura. Learning Goals: Apply the main concepts of ReactJS, also applying the Redux Archicture. Mastering HTML and CSS/SCSS concepts. 
 </h3>
 
 <p align="center">
