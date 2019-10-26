@@ -30,7 +30,7 @@
 <hr />
 
 ## :rocket: About the project
-Instalura is social media application based on Instagram. The main application was made with Electrode for the server side rendering of React increasing the SEO. And, the landing page was made with SCSS and HTML.
+Instalura is a social media application based on Instagram. The main application was made with Electrode for the server side rendering of React increasing the SEO. And, the landing page was made with SCSS and HTML.
 
 <hr />
 
@@ -41,7 +41,7 @@ According to the 3 requested features
 *First Feature*: Landing Page 
   - Fonts integrated with google fonts: Open Sans and Open Sans 700
   - Stylesheets with SCSS/CSS: SCSS Choosed.
-  - Links "Conheça nossa equipe" and "Trabalhe com a gente": Applied a hover effect on those links, with a transition effect, scalling the items (1.1 Proporsition).
+  - Links "Conheça nossa equipe" and "Trabalhe com a gente": Applied a hover effect on those links, with a transition effect, scalling the items (1.1 Proportion).
   - Hover effect on items of the news section: Showing a white border on each of them.
   
 *Second Feature*: Signup
